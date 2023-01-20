@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('istockphoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    #mypic{
+    width: 200px;
+    height: 250px;
+    }
+    #sidebar{
+    width: 150px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+    #mypic{
+    width: 300px;
+    height: 350px;
+    }
+    #sidebar{
+    width: 200px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+    #mypic{
+    width: 400px;
+    height: 450px;
+    }
+    #sidebar{
+    width: 250px;
+    }
+}
+  h1, h2, h3 {
+    text-align: center;
+    color: white;
+    
+  }
+  img {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 400px;
+    height: 450px;
+    border-radius: 50%;
+  }
+  #mypic{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    grid-area: mypic;
+    align-self: center;
+    justify-self: center;
+  }
+  #contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+    width: 100%;
+    background-color: none;
+  }
+  #contact-button{
+    color: rgb(232, 243, 239);
+    width: 130px;
+    height: 50px;
+    background-color: rgb(65, 132, 17);
+    border-radius: 5px;
+    border-color:rgb(2, 54, 2);
+  }
+  #sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: none;
+    align-items: center;
+    justify-items: center;
+  }
+  #sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #sidebar li a{
+    color: aqua;
+    text-decoration: none;
+  }
+
+  nav .sidebar4{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      padding: 20px 0;
+      width: 170px;
+      background-color: rgb(53, 51, 51);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+  }
+  nav.open4 .sidebar4{
+      left: 0;
+      z-index: 2;
+  }
+  .sidebar4 .sidebar-content{
+      padding: 30px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+  }
+  .sidebar-content .list{
+      list-style: none;
+
+  }
+  .sidebar-content{
+    left: 50%;
+    right: 50%;
+    bottom: 40%;
+    top: 30%;
+
+  }
+  .list .nav-link{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      background-color: rgb(14, 11, 11);
+      margin: 8px 0;
+      border-radius: 8px;
+      padding: 14px 12px;
+  }
+  .nav-link:hover{
+      background-color: #464648;
+  }
+  .nav-link .icon4{
+      margin-right: 14px;
+      font-size: 20px;
+      color: white;
+  }
+  .nav-link .link{
+      font-size: 16px;
+      color: white;
+      font-weight: 400;
+  }
+  .nav-link:hover .icon4
+  {
+      color: black;
+      background-color: white;
+  }
+  .nav-link:active .icon4,
+  .nav-link:active .link{
+      opacity: 0.5;
+  }
+  #welcome{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    padding: 100px;
+    grid-area: welcome;
+    align-self: center;
+    justify-self: center;
+  }
+  @media (max-width: 600px) {
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "name"
+            "mypic"
+            "welcome"
+            "contact";
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }  }
+  #name {
+    padding-top: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    position: absolute;
+    left: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-area: name;
+  }
+  #facebook {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+  }
+  #facebook:hover,
+  #instagram:hover,
+  #linkedin:hover {
+    transform: rotate(360deg);
+    transition: 0.2s ease-in-out;
+  }
+  #social-icons {
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+    width: 50px;
+    text-align: center;
+  }
+  #facebook,
+  #instagram,
+  #linkedin {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+  }
+  #list-div{
+    position: absolute;
+    bottom: 31%;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .flex-item {
+      background-color: white;
+      padding: 20px;
+      flex-basis: calc(33.33% - 20px);
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "name name name"
+        "mypic welcome welcome"
+        "contact contact contact";
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+}
+
