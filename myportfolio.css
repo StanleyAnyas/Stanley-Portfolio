@@ -45,12 +45,50 @@ body {
     #sidebar{
     width: 250px;
     }
-}
+  }
   h1, h2, h3 {
     text-align: center;
     color: white;
     
   }
+  #welcome {
+    position: absolute;
+    bottom: 30%;
+    padding-top: 0;
+    text-align: center;
+    height: 100px;
+  }
+
+  #welcome h3 {
+      color: rgb(238, 248, 250);
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+  #welcome h3:first-of-type {
+    color: blue;
+  }
+  #welcome h3:last-of-type {
+    color: red;
+  }
+  #welcome h3 {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200%;
+    animation: rainbow 3s linear infinite;
+  }
+  @keyframes rainbow {
+      0% {
+          background-position: 0%;
+      }
+      100% {
+          background-position: -100%;
+      }
+  }
+
+
   img {
     float: right;
     margin: 0 0 20px 20px;
@@ -87,6 +125,7 @@ body {
     border-radius: 5px;
     border-color:rgb(2, 54, 2);
     z-index: 1;
+    transition: transform 0.2s;
   }
   #hire{
     margin-left: 20px;
@@ -100,8 +139,12 @@ body {
   }
   #contact-button:active,
   #hire:active{
-    z-index: 10;
+    transform: scale(1.1);
   }
+  /*#contact-button:focus,
+  #hire:focus{
+    transform: scale(1.1);
+  }*/
   #sidebar{
     position: fixed;
     top: 0;
