@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('istockphoto.jpg');
+    background-image: url('background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -77,13 +77,30 @@ body {
     width: 100%;
     background-color: none;
   }
-  #contact-button{
+  #contact-button,
+  #hire {
     color: rgb(232, 243, 239);
     width: 130px;
+    font-weight: bolder;
     height: 50px;
     background-color: rgb(65, 132, 17);
     border-radius: 5px;
     border-color:rgb(2, 54, 2);
+    z-index: 1;
+  }
+  #hire{
+    margin-left: 20px;
+  }
+  #contact-button:hover,
+  #hire:hover{
+    box-shadow: 0 0 10px blue;
+    transform: scale(1.1);
+    transform: scale(1.1) translate(0, -10px);
+    z-index: 10;
+  }
+  #contact-button:active,
+  #hire:active{
+    z-index: 10;
   }
   #sidebar{
     position: fixed;
