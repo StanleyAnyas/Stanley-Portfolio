@@ -34,3 +34,12 @@ function checkWidth() {
 
 window.onresize = checkWidth;
 checkWidth();
+
+document.getElementById("contact-button").addEventListener("click", function(){
+    window.location.href = "contact.html";
+});
+
+document.getElementById("hire").addEventListener("click", function(){
+    window.location.href = "project.html";
+});
+
