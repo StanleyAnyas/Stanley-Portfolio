@@ -4,8 +4,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: scroll;
     position: relative;
   }
 #projects {
@@ -38,5 +38,26 @@ body {
   
   #projects a:hover {
     background-color: #45a049;
+  }
+  #home-button{
+    display: flex;
+    position: absolute;
+    left: 48%;
+    bottom: 10%;
+    background-color: #45a049;
+    border: none;
+    border-radius: 4px;
+    color: rgb(203, 192, 192);
+    padding: 7px 9px;
+
+  }
+  p {
+    color: rgb(205, 196, 196);
+  }
+  body{
+    padding-bottom: 200px;
+  }
+  #myproject{
+    color: rgb(167, 63, 63);
   }
   

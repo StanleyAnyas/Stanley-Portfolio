@@ -48,4 +48,25 @@ body {
   #contact input[type="submit"]:hover {
     background-color: #45a049;
   }
+  #submit{
+    display: inline-block;
+  }
+  #home-button{
+    display: block;
+    position: absolute;
+    left: 48%;
+    bottom: 30%;
+    background-color: #45a049;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 7px 9px;
+
+  }
+  form{
+    color: rgb(209, 195, 69);
+  }
+  #contact-me{
+    color: rgb(56, 223, 214);
+  }
   
