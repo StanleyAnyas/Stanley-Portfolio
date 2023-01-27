@@ -149,7 +149,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 270px;
     height: 100vh;
     background-color: none;
     align-items: center;
@@ -171,7 +171,7 @@ body {
       left: -100%;
       height: 100%;
       padding: 20px 0;
-      width: 170px;
+      width: 180px;
       background-color: rgb(53, 51, 51);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.5s ease;
@@ -206,6 +206,7 @@ body {
       margin: 8px 0;
       border-radius: 8px;
       padding: 14px 12px;
+      padding-left: 12PX;
   }
   .nav-link:hover{
       background-color: #464648;
